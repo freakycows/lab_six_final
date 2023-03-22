@@ -7,7 +7,10 @@ def encode(num):
 
 
 def decode(num):
-    pass
+    password = ''
+    for i in num:
+        password += str((int(i) -3 ) % 10)
+    return password
 
 
 image_data = None
